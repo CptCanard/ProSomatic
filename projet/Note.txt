@@ -1,0 +1,57 @@
+Import de pywebaudioplayer 24/11/2022
+
+
+
+Ne pas représenter l'audio pour le moment. Se contenter d'écouter et d'enregistrer l'audio puis de faire un post traitement.
+
+
+Librairie :
+
+Wavesurfer.js
+WebAudioRecorder.js
+
+p5.js pour l'aspect graphique
+
+Praat graphique et praat serveur en ligne de commande à voir.
+
+On peut ne pas finir le code, mais détailler ce qui sera fait d'un point de vue du traitement du signal et des différentes modalités.
+
+
+Views : Contient les différentes fonctions que l'on utilise pour une application. C'est sur Views que l'on importe les librairies.
+Le résultat est ensuite envoyé sur une page html.
+
+
+
+
+///////////////////////////////////////////POWERPOINT
+
+Slide 1 :
+Rappel: Blabla le projet consiste en ça.
+
+
+Slide 2 
+Où on en est :
+
+J'ai essayé d'implémenter l'enregistrement audio. Ça avance.
+
+Slide 3 :
+
+
+
+
+/////////////////////////////////////////// Nouveaux problèmes :
+
+Si l'on enregistre un vocal, complexe de mettre sous forme d'ondes.
+==> Faire un graphique de la proximité entre les deux simples audios.
+Ou des valeurs.
+Sinon créer une interface graphique de toutes pièces ; coûteux en temps et ressources. Nécessités d'avoir les connaissances pour.
+
+Questions des enregistrements : 
+	En plus de la nécessité de créer un corpus homogène pour une tâche donnée, le corpus a des conditions d'enregistrements :
+	La voix de l'exemple sera peut-être enregistrée dans des conditions de laboratoires : silence, bon micro, etc... 
+	La voix de l'apprenant devra aussi l'être, c'est à dire dans le silence, avec un bon micro, etc.. Sinon la comparaison sera biaisé à cause de la nature de l'échantillon.
+
+	Pour régler cela :
+
+		Faire un disclaimer avant une session test : Se mettre dans un endroit calme, vérifier la qualité du micro (pour éviter un volume trop bas ou trop haut, etc...)
+		Avoir un algorithme derrière robuste au bruit et au silence dans la reconnaissance.
